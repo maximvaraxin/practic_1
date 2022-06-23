@@ -1,4 +1,6 @@
-﻿Console.WriteLine($"Введите число:");
+﻿//square num
+
+Console.WriteLine($"Введите число:");
 int num = Convert.ToInt32(Console.ReadLine());
 
 int squareNum = num * num;
