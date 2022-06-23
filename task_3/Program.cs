@@ -6,9 +6,15 @@
  * 918 -> 8
 */
 
-Console.WriteLine($"Введите число");
+Console.WriteLine($"Введите число:");
 string num = Console.ReadLine();
 
-if (num.Length == 3){ Console.WriteLine( $"Последняя цифра: {num[num.Length - 1]}"); }
-if (num.Length < 3 || num.Length - 1 > 3){ Console.WriteLine($"Введено не 3-х значное число!"); }
+if (num.Length == 3) { Console.WriteLine($"Последняя цифра: {num[num.Length - 1]}"); }
+else { Console.WriteLine($"Введено не 3-х значное число!"); }
 
+Console.WriteLine($"---------");
+
+Console.WriteLine($"Введите число(без проверки на 3 знака):");
+int num_2 = Convert.ToInt32(Console.ReadLine());
+int lastNumber = num_2 % 10;
+Console.WriteLine($"Последняя цифра: {lastNumber}");
